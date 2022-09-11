@@ -1,11 +1,13 @@
 const MongoClient = require("mongodb").MongoClient;
-//require("dotenv").config();
 
-const client = new MongoClient('mongodb+srv://ginton:203965884@cluster0.eg5wvas.mongodb.net/test');
+const client = new MongoClient('mongodb://localhost:27017');
 //const client = new MongoClient(process.env.MONGO_DB_URL);
 
 
-const dbName = "Flights", collectionName = "flight1";
+// const dbName = "Flights", collectionName = "flight1";
+
+const dbName = "test",
+    collectionName = "flights";
 
 /**
  * @description Inserts a new Flight to the database

@@ -34,5 +34,5 @@ kafkaConsumer.on("data", function (message) {
 /* Start server */
 const PORT = 3003;
 app.listen(PORT, () => {
-  console.log(`Batch Layer listening at http://localhost:${PORT}`);
+  console.log(`listening at http://localhost:${PORT}`);
 });
